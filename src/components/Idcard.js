@@ -1,14 +1,19 @@
 import React from 'react'
 
 function IdCard(props){
+
+     const {firstName, lastName, gender, height, birth, picture } = props
+
+    
+
     return (
         <div>
-            <p>First Name: {props.firstName}</p>
-            <p>Last Name: {props.lastName}</p>
-            <p>Gender: {props.gender}</p>
-            <p>Height: {props.height}</p>
-            <div>Birth: {props.birth}</div> 
-            <img src={props.picture}  alt='' />
+            <p>First Name: {firstName}</p>
+            <p>Last Name: {lastName}</p>
+            <p>Gender: {gender}</p>
+            <p>Height: {height}</p>
+            <div>Birth: {birth.toString()}</div> 
+            <img src={picture}  alt='' />
         </div>
 
     )
